@@ -15,13 +15,13 @@ int GetDemension(string message)
 }
 double[,] InitMatrix(int firstDemension, int secondDemension)
 {
-    double [,] matrix = new double [firstDemension, secondDemension];
+    double[,] matrix = new double[firstDemension, secondDemension];
     Random rnd = new Random();
     for (int i = 0; i < firstDemension; i++)
     {
         for (int j = 0; j < secondDemension; j++)
             matrix[i, j] = new Random().NextDouble();
-            
+
     }
     return matrix;
 }
